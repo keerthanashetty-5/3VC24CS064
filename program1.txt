@@ -1,0 +1,176 @@
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/keer (master)
+$ ls
+3VC24CS064/  lab1.txt
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/keer (master)
+$ cd 3VC24CS064/
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/keer/3VC24CS064 (main)
+$ ls
+README.md
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/keer/3VC24CS064 (main)
+$ git init
+Reinitialized existing Git repository in D:/keer/3VC24CS064/.git/
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/keer/3VC24CS064 (main)
+$ git config --global user.name "keerthanashetty-5"
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/keer/3VC24CS064 (main)
+$ git config --global user.email "shettykeerthana584@gmail.com
+> "
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/keer/3VC24CS064 (main)
+$ git config --list
+pack.packsizelimit=2g
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=schannel
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.email=shettykeerthana584@gmail.com
+
+user.name=keerthanashetty-5
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+remote.origin.url=https://github.com/keerthanashetty-5/3VC24CS064
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.main.remote=origin
+branch.main.merge=refs/heads/main
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/keer/3VC24CS064 (main)
+$ wq
+bash: wq: command not found
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/keer/3VC24CS064 (main)
+$
+
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/keer/3VC24CS064 (main)
+$
+
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/keer/3VC24CS064 (main)
+$
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/keer/3VC24CS064 (main)
+$
+
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/keer/3VC24CS064 (main)
+$
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/keer/3VC24CS064 (main)
+$
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/keer/3VC24CS064 (main)
+$
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/keer/3VC24CS064 (main)
+$ touch hi.txt
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/keer/3VC24CS064 (main)
+$ touch hello.txt
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/keer/3VC24CS064 (main)
+$ touch my.txt
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/keer/3VC24CS064 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/m
+ain'.
+
+Untracked files:
+  (use "git add <file>..." to include in
+ what will be committed)
+        hello.txt
+        hi.txt
+        my.txt
+
+nothing added to commit but untracked fi
+les present (use "git add" to track)
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/keer/3VC24CS064 (main)
+$ git add a
+fatal: pathspec 'a' did not match any files
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/keer/3VC24CS064 (main)
+$ git add hello.txt
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/keer/3VC24CS064 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   hello.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hi.txt
+        my.txt
+
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/keer/3VC24CS064 (main)
+$ git add hi.txt
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/keer/3VC24CS064 (main)
+$ git add .
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/keer/3VC24CS064 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   hello.txt
+        new file:   hi.txt
+        new file:   my.txt
+
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/keer/3VC24CS064 (main)
+$ git commit -m "3 files are added"
+[main 6490bf3] 3 files are added
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello.txt
+ create mode 100644 hi.txt
+ create mode 100644 my.txt
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/keer/3VC24CS064 (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/keer/3VC24CS064 (main)
+$ git push origin main
+info: please complete authentication in your browser...
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 296 bytes | 296.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/keerthanashetty-5/3VC24CS064
+   068e0d7..6490bf3  main -> main
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/keer/3VC24CS064 (main)
+$
